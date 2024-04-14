@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #E5358C;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color:#D01760;
+  text-transform:capitalize;
+}
+
+img {
+    max-width: 50%;
+    max-height: 10%;
+    margin-top: 20px;
+}
+
+.message-container {
+    background-color: #D01760;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative; /* Add this line for positioning */
+}
+
+.message {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Heart shapes */
+.message-container:before,
+.message-container:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    width: 20px;
+    height: 20px;
+    background-color: #960145;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.message-container:before {
+    left: -20px;
+}
+
+.message-container:after {
+    right: -20px;
+}
+/* New styles for the beauty button */
+
+#beautyButton {
+    background-color: #960145;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 75px;
+    cursor: pointer;
+    margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#beautyButton:hover {
+    background-color: #ff69b4;
+}
+/* New styles for modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Additional styles */
+.modal-content h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+}
+
+.modal-content p {
+    color: #666;
+    line-height: 1.6;
+}
