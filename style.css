@@ -69,7 +69,7 @@ img {
 }
 /* New styles for the beauty button */
 
-.Button {
+.button {
     background-color: #960145;
     color: white;
     border: none;
@@ -81,7 +81,7 @@ img {
   transition: background-color 0.3s ease-in-out;
 }
 
-.Button:hover {
+.button:hover {
     background-color: #ff69b4;
 }
 /* New styles for modal */
